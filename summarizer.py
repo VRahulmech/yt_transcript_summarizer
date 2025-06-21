@@ -5,7 +5,7 @@ import streamlit as st
 from utils import chunk_text
 
 
-def summarize_with_openrouter(text, model="deepseek/deepseek-v3-base:free"):
+def summarize_with_openrouter(text, model="meta-llama/llama-3.3-8b-instruct:free"):
     """Summarize text using OpenRouter API."""
     api_key = st.secrets.get("OPENROUTER_API_KEY", os.getenv("OPENROUTER_API_KEY"))
     if not api_key:

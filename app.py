@@ -10,9 +10,9 @@ st.markdown("Enter a YouTube video URL to generate a concise, exam-ready summary
 # Input fields
 url = st.text_input("YouTube Video URL", placeholder="https://www.youtube.com/watch?v=...")
 model = st.selectbox("Select Model", [
-    "deepseek/deepseek-v3-base:free",
-    "meta-llama/llama-3.3-8b-instruct:free"
-])
+    "meta-llama/llama-3.3-8b-instruct:free",
+    "deepseek/deepseek-v3-base:free"
+], index=0)
 
 # Summarize button
 if st.button("Summarize"):
