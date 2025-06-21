@@ -1,10 +1,10 @@
-YouTube Transcript Summarizer
+# YouTube Transcript Summarizer
 A Streamlit application that downloads YouTube video transcripts, converts them to plain text, and generates concise, exam-ready summaries using the OpenRouter API.
 Features
 
-Downloads YouTube transcripts in VTT format using yt-dlp.
-Converts VTT to plain text and saves it.
-Summarizes transcripts into structured markdown summaries.
+- Downloads YouTube transcripts in VTT format using yt-dlp.
+- Converts VTT to plain text and saves it.
+- Summarizes transcripts into structured markdown summaries.
 Stores outputs (VTT, TXT, summary) in a video-specific folder.
 Displays a progress bar with stages: Start, Download, Process, Finish.
 
