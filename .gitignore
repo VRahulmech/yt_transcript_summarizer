@@ -1,0 +1,27 @@
+Virtual environment
+
+venv/ .env
+
+Python cache and compiled files
+
+pycache/ *.py[cod] *$py.class
+
+Streamlit secrets
+
+.streamlit/secrets.toml
+
+Data files and transcript outputs
+
+transcripts/ *.vtt *.txt
+
+OS and editor files
+
+.DS_Store *.swp *.swo .vscode/ .idea/
+
+Package and build files
+
+dist/ build/ *.egg-info/ pip-wheel-metadata/
+
+Logs and temporary files
+
+*.log *.tmp *.temp

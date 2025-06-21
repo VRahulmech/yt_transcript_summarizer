@@ -1,0 +1,5 @@
+streamlit==1.38.0
+yt-dlp==2024.10.22
+webvtt-py==0.4.6
+requests==2.32.3
+textwrap3==0.9.2
