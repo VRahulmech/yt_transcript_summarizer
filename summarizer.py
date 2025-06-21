@@ -1,12 +1,16 @@
 import requests
 import json
 import os
+import streamlit as st
 from utils import chunk_text
 
 
 def summarize_with_openrouter(text, model="deepseek/deepseek-v3-base:free"):
     """Summarize text using OpenRouter API."""
-    api_key = "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"
+    api_key = st.secrets.get("OPENROUTER_API_KEY", os.getenv("OPENROUTER_API_KEY"))
+    if not api_key:
+        raise ValueError("OpenRouter API key not found. Set it in Streamlit secrets or environment variables.")
+
     url = "https://openrouter.ai/api/v1/chat/completions"
 
     headers = {

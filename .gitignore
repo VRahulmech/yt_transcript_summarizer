@@ -25,3 +25,5 @@ dist/ build/ *.egg-info/ pip-wheel-metadata/
 Logs and temporary files
 
 *.log *.tmp *.temp
+
+.streamlit/secrets.toml
